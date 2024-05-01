@@ -1,0 +1,32 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./colors";
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  &__title {
+    font-size: clamp(1.5rem, 1.0666rem + 1.849vi, 2.25rem);
+    line-height: 1.5;
+    font-weight: 200;
+    color: colors.$grayishBlue;
+    text-align: center;
+
+    span {
+      font-weight: 600;
+      color: colors.$darkBlue;
+    }
+  }
+
+	&__subtext {
+		font-size: 0.9375rem;
+		color: colors.$grayishBlue;
+    text-align: center;
+		line-height: 1.5;
+		font-weight: 400;
+		max-inline-size: 55ch;
+	}
+}

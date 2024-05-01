@@ -1,0 +1,94 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./colors";
+
+.group-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+	justify-items: center;
+	justify-content: center; 
+	margin-block-start: 50px;   
+
+  @media screen and (min-width: 1024px) {
+		grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+		margin-block-start: 30px;
+
+		width: fit-content;
+		margin-inline: auto;
+  }
+  .card {
+    width: 100%;
+    max-width: 350px;
+    padding: 32px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: colors.$white;
+
+    &.supervisor {
+      border-top: 4px solid colors.$cyan;
+
+			@media screen and (min-width: 1024px){
+				grid-column: 1 / span 1;
+				grid-row: 2 / span 2;
+			}
+    }
+
+    &.team {
+      border-top: 4px solid colors.$red;
+
+			@media screen and (min-width: 1024px){
+				grid-column: 2 / span 1;
+				grid-row: 1 / span 2;
+			}
+    }
+
+    &.karma {
+      border-top: 4px solid colors.$orange;
+
+			@media screen and (min-width: 1024px){
+				grid-column: 2 / span 1;
+				grid-row: 3 / span 2;
+			}
+    }
+
+    &.calculator {
+      border-top: 4px solid colors.$blue;
+			
+			@media screen and (min-width: 1024px){
+				grid-column: 3 / span 1;
+				grid-row: 2 / span 2;
+			}
+    }
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-block-end: 20px;
+    }
+
+    &__title {
+      font-size: 1.25rem;
+      font-weight: semibold;
+      line-height: 1.5;
+      color: colors.$darkBlue;
+    }
+
+    &__text {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: colors.$grayishBlue;
+    }
+
+    &__img {
+      display: block;
+      width: 65px;
+      height: 65px;
+      object-fit: contain;
+      margin-inline-start: auto;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+/* import fonts */
+
+/* Poppins */
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-ExtraLight.ttf") format('TrueType');
+  font-weight: 200;
+}
+
+/* Poppins */
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Regular.ttf") format('TrueType');
+  font-weight: 400;
+}
+
+
+/* Poppins */
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-SemiBold.ttf") format('TrueType');
+  font-weight: 600;
+}
+
+
+
+$primary-ff:  "Poppins", sans-serif;

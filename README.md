@@ -21,7 +21,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### The challenge
 
-The challenge is to build out this Recipe page and get it looking as close to the design as possible.
+The challenge is to build out this Four card feature section and get it looking as close to the design as possible.
 
 Your users should be able to:
 
